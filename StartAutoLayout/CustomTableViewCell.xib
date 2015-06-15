@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
@@ -34,10 +35,12 @@
                     <constraint firstItem="KlO-ue-HBW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cp8-OZ-3KZ"/>
                     <constraint firstItem="aAp-xq-Fl1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="flT-4j-hgh"/>
                     <constraint firstItem="KlO-ue-HBW" firstAttribute="top" secondItem="aAp-xq-Fl1" secondAttribute="bottom" id="oKg-qN-L2K"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KlO-ue-HBW" secondAttribute="bottom" constant="10" id="oyx-rj-U9e"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KlO-ue-HBW" secondAttribute="trailing" constant="10" id="wnL-w8-fq7"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="contentLabel" destination="KlO-ue-HBW" id="4aH-Yb-6tT"/>
                 <outlet property="label" destination="KlO-ue-HBW" id="6I3-0Y-HbP"/>
                 <outlet property="labelToImageView" destination="oKg-qN-L2K" id="FuK-uY-Luq"/>
                 <outlet property="labelToSuperView" destination="Lht-ep-AJx" id="tfL-9B-yzc"/>

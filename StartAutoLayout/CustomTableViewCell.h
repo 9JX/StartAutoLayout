@@ -10,6 +10,7 @@
 
 @interface CustomTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 + (instancetype)getCell;
 
 - (void)configViewWithImage:(UIImage *)image text:(NSString *)text;
